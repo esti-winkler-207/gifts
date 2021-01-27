@@ -1,0 +1,39 @@
+
+<div class="ui-fluid p-d-flex p-jc-center">
+
+    <form (ngSubmit)="updateGroup()">
+        
+      <p-card header=""  styleClass="p-card-shadow p-shadow-20 p-mt-4">
+          <div class="p-text-right">
+              <div class="p-field p-text-right p-d-flex p-flex-column">
+              <label class="p-mb-2" for="name_m"> שם הקבוצה </label>
+              <input class="p-mb-2" id="name_m" type="text" pInputText [(ngModel)]="g.name_group" name=f>
+          </div>
+          <div class="p-field p-text-right p-d-flex p-flex-column">
+              <label class="p-mb-2" for="pwd_m">סיסמה</label>
+              <input class="p-mb-2" id="pwd_m" type="password" pPassword [(ngModel)]="g.password_group" name=g>
+          </div>
+         </div>
+          <ng-template pTemplate="footer" class="p-d-flex p-text-left">
+              <p-button type="submit" class="p-text-left" label="המשך" icon="pi pi-check"></p-button>
+          </ng-template>
+      </p-card>
+    </form>
+  </div>
+  
+  <!-- --------------------------------- -->
+  
+  
+  
+  
+  
+      
+  
+  
+     
+      
+          
+          
+         
+    
+      

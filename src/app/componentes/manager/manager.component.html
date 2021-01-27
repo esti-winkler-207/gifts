@@ -1,1 +1,46 @@
-<p>manager works!</p>
+
+<div class="ui-fluid p-d-flex p-jc-center">
+
+  <form (ngSubmit)="addmanager()">
+      
+    <p-card header="הרשמה למנהלת הקבוצה"  styleClass="p-card-shadow p-shadow-20 p-mt-6">
+        <div class="p-text-right">
+            <div class="p-field p-text-right p-d-flex p-flex-column">
+            <label class="p-mb-2" for="name_m">הכנס שם משתמש</label>
+            <input class="p-mb-2" id="name_m" type="text" pInputText [(ngModel)]="m2.name_manager" name=f>
+        </div>
+        <div class="p-field p-text-right p-d-flex p-flex-column">
+            <label class="p-mb-2" for="pwd_m">סיסמה</label>
+            <input class="p-mb-2" id="pwd_m" type="password" pPassword [(ngModel)]="m2.password_manager" name=g>
+        </div>
+        <div class="p-field p-text-right p-d-flex p-flex-column">
+            <label class="p-mb-2" for="_m">אימייל</label>
+            <input class="p-mb-2" id="_m" type="email" pInputText [(ngModel)]="m2.email_manager" name=p>
+        </div>
+        <div class="p-field p-text-right p-d-flex p-flex-column">
+            <label class="p-mb-2" for="tel_m">מספר פלאפון</label>
+            <input class="p-mb-2" id="tel_m" type="tel" pInputText [(ngModel)]="m2.phone_number_manager" name=k>
+        </div></div>
+        <ng-template pTemplate="footer" class="p-d-flex p-text-left">
+            <p-button type="submit" class="p-text-left" label="המשך" icon="pi pi-check"></p-button>
+        </ng-template>
+    </p-card>
+  </form >
+</div>
+
+<!-- --------------------------------- -->
+
+
+
+
+
+    
+
+
+   
+    
+        
+        
+       
+  
+    

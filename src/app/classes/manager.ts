@@ -1,6 +1,9 @@
 export class Manager {
-    constructor(id_manager:number, 
-                   email_manager:string,
-         phone_number_manager:string, 
-             password_manager:string ){}
+
+        id_manager!:number
+        name_manager!:string
+        email_manager!:string
+        phone_number_manager!:string 
+        password_manager!:string
+        constructor(){}
 }
