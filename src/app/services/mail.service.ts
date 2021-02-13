@@ -9,10 +9,9 @@ import { Mail } from '../classes/mail';
 export class MailService {
 url:string="https://localhost:44341/api/mail/sendemail"
   constructor(private http:HttpClient) { }
-  sendemail(m:Mail):Observable<string>
+  sendemail(m:Mail):Observable<Mail>
   {
-
-    return this.http.post<string>(this.url,m);
+    return this.http.post<Mail>(this.url,m);
   }
 
 }
