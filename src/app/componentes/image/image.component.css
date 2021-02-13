@@ -1,0 +1,17 @@
+.image-upload-container{
+    cursor: pointer;
+}
+input{
+    display:none;
+}
+.aaa{
+    position: relative;
+    background-color: #f7f7f7;
+}
+.bbb{
+    background: center center no-repeat;
+    background-size: contain;
+    width: 116px;
+    height: 116px;
+
+}

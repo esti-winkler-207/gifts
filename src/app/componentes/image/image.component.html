@@ -1,0 +1,11 @@
+<label pButton label="Select image" class="image-upload-container btn btn-bwm">
+    
+    <input #imageInput 
+           type="file"
+           accept="image/*"
+           (change)="processFile(imageInput)">
+  </label>
+  <div *ngIf="selectedFile" class="aaa">
+      <div class="bbb"
+       [ngStyle]="{'background-image':'url('+selectedFile.src+')'}"></div>
+  </div>
