@@ -54,10 +54,24 @@ this.groupserv.getByPWD(this.groupserv.pwd).subscribe(
 
    data=>{console.log(data),
     this.displayBasic = true;
+    this.p.id_group=data.id_group;
+
   }
   ,err=>{console.log("error")}
 )
     this.displayBasic = true;
 }
+addparent(){
+  this.parentserv.p=this.p;
+  this.parentserv.addParent(this.parentserv.p).subscribe(
+    data=>{
+      console.log(data);
+      this.displayBasic=false;
+    },
+    err=>{
+      console.log("error!!!!")
+    }
 
+  )
+}
 }
