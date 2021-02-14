@@ -16,9 +16,9 @@ export class MailComponent implements OnInit {
   }
   sendemail()
   {
-    this.m.contactadress="estiwinkler207@gmail.com"
-    this.m.subject="Hello Esti!"
-    this.m.body="it's work, let's continue"
+    this.m.contactadress="5710490@gmail.com"
+    this.m.subject="שלום אסתי"
+    this.m.body="זה אסתי וינקלר, הצלחתי לעשות שליחת מייל!!! !!!"
     this.mailServ.sendemail(this.m).subscribe(data=>{console.log(data)},err=>{console.log("error!!!")})
 
   }

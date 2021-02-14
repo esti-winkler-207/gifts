@@ -18,6 +18,10 @@ import {FileUploadModule} from 'primeng/fileupload';
 import { UploadImageComponent } from './componentes/upload-image/upload-image.component';
 import { ImageComponent } from './componentes/image/image.component';
 import { MailComponent } from './componentes/mail/mail.component';
+import { AddpeopleComponent } from './componentes/addpeople/addpeople.component';
+
+import { DialogModule } from 'primeng/dialog';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +32,8 @@ import { MailComponent } from './componentes/mail/mail.component';
     ProductsComponent,
     UploadImageComponent,
     ImageComponent,
-    MailComponent
+    MailComponent,
+    AddpeopleComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +45,10 @@ import { MailComponent } from './componentes/mail/mail.component';
     ButtonModule,
     CardModule,
     PasswordModule,
-    FileUploadModule
+    FileUploadModule,
+ DialogModule 
+
+    
 
 
   ],

@@ -1,0 +1,39 @@
+.p-card-shadow,.p-card-shadow{
+    float: right;
+    width: '360px'
+}
+
+label{
+    font-size: larger;
+    
+    display: inline-block !important;
+
+}
+p-card{
+    margin: auto !important; 
+    text-align: right !important;
+    height: 100vh !important;
+
+}
+form{
+    margin: auto !important;
+
+}
+.ui-fluid{
+    height: 100vh !important;
+    margin: auto !important;
+    
+}
+input{
+    
+    width:40vw  ;
+    margin: auto ;
+}
+
+
+@media only screen and (max-width:600px ){
+    input{
+        width: 80vw !important;
+    }
+
+}
