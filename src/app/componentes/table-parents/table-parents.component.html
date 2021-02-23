@@ -1,0 +1,71 @@
+<p>table-parents works!</p>
+<div class="card">
+<p-table [value]="listP" dataKey="id" editMode="row">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>שם</th>
+            <th>מספר טלפון</th>
+            <th>אימייל</th>
+            <th style="width:8rem"></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body"  let-p let-editing="editing" let-ri="rowIndex">
+        <tr [pEditableRow]="p">
+            <td pEditableColumn>
+                <p-cellEditor>
+                    <ng-template pTemplate="input">
+                        <input pInputText type="text" [(ngModel)]="p.name_parent">
+                    </ng-template>
+                    <ng-template pTemplate="output">
+                        {{p.name_parent}}
+                    </ng-template>
+                </p-cellEditor>
+            </td>
+            <td pEditableColumn>
+                <p-cellEditor>
+                    <ng-template pTemplate="input">
+                        <input pInputText type="text" [(ngModel)]="p.email_parent" required>
+                    </ng-template>
+                    <ng-template pTemplate="output">
+                        {{p.email_parent}}
+                    </ng-template>
+                </p-cellEditor>
+            </td>
+            <td pEditableColumn>
+                <p-cellEditor>
+                    <ng-template pTemplate="input">
+                        <input  pInputText type="text" [(ngModel)]="p.phone_number" >
+                    </ng-template>
+                    <ng-template pTemplate="output">
+                        {{p.phone_number}}
+                    </ng-template>
+                </p-cellEditor>
+            </td>
+           
+            <td style="text-align:center">
+                <button *ngIf="!editing" pButton pRipple type="button" pInitEditableRow icon="pi pi-pencil" (click)="onRowEditInit(p)" class="p-button-rounded p-button-text"></button>
+                <button *ngIf="editing" pButton pRipple type="button" pSaveEditableRow icon="pi pi-check" (click)="onRowEditSave(p)" class="p-button-rounded p-button-text p-button-success p-mr-2"></button>
+                <button *ngIf="editing" pButton pRipple type="button" pCancelEditableRow icon="pi pi-times" (click)="onRowEditCancel(p)" class="p-button-rounded p-button-text p-button-danger"></button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table></div>
+        
+<!-- <p-table [value]="listP">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Vin</th>
+            <th>Year</th>
+            <th>Brand</th>
+            
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-p>
+        <tr>
+            <td>{{p.name_parent}}</td>
+            <td>{{p.email_parent}}</td>
+            <td>{{p.phone_number}}</td>
+            
+        </tr>
+    </ng-template>
+</p-table> -->

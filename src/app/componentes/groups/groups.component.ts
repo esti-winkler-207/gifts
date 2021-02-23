@@ -34,8 +34,9 @@ g:Groups=new Groups()
     this.groupSer.g.collect_end=false;
     this.groupSer.g.id_manager_group=this.mangarSer.id_m;
     this.groupSer.pwd=this.g.password_group;
+   
     this.groupSer.updateGroup(this.groupSer.g).subscribe(
-      data=>{console.log(data),
+        data=>{console.log(data,this.g.id_group),
         this.route.navigate(["/addpeople"])
       },
       err=>{console.log("error!!!")}

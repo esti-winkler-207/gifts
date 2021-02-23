@@ -14,4 +14,8 @@ p:Parents=new Parents()
     return this.http.post<Array<Parents>>(this.url+"addParent",p1)
 
   }
+  getByIdGroup(id:string):Observable<Array<Parents>>{
+    debugger;
+    return this.http.get<Array<Parents>>(this.url+"getByIdGroup/"+id);
+  }
 }

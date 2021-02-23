@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PrimeNGConfig } from 'primeng/api';
 import { Parents } from 'src/app/classes/parents';
 import { GroupsSerService } from 'src/app/services/groups-ser.service';
@@ -30,7 +31,7 @@ import { ParentsService } from 'src/app/services/parents.service';
 `]  
 })
 export class AddpeopleComponent implements OnInit {
-  constructor(private primengConfig: PrimeNGConfig,private groupserv:GroupsSerService,private parentserv:ParentsService) {}
+  constructor(private primengConfig: PrimeNGConfig,private groupserv:GroupsSerService,private parentserv:ParentsService,private route:Router) {}
 
   displayModal: boolean=false;
 
@@ -74,4 +75,9 @@ addparent(){
 
   )
 }
+showTable(){
+  this.route.navigate(["/tableParents"])
+
+}
+
 }

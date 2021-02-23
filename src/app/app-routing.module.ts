@@ -6,11 +6,13 @@ import { GroupsComponent } from './componentes/groups/groups.component';
 import { ImageComponent } from './componentes/image/image.component';
 import { ManagerComponent } from './componentes/manager/manager.component';
 import { ProductsComponent } from './componentes/products/products.component';
+import { TableParentsComponent } from './componentes/table-parents/table-parents.component';
 import { UploadImageComponent } from './componentes/upload-image/upload-image.component';
 
 const routes: Routes = [
+  {path:"tableParents", component:TableParentsComponent},
   {path:"addpeople",component:AddpeopleComponent},
-{path:"image",component:ImageComponent},
+  {path:"image",component:ImageComponent},
   {path:"uploadImage",component:UploadImageComponent},
   {path:"products",component:ProductsComponent},
   {path:"groups",component:GroupsComponent},

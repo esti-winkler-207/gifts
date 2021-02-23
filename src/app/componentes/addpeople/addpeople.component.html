@@ -1,3 +1,4 @@
+<p-button (click)="showTable()">עריכת רשומות בקבוצה</p-button>
 
 <p-button (click)="showBasicDialog()" icon="pi pi-external-link" label="הוספת חבר בקבוצה"></p-button>
 <p-dialog header="הכנס פרטי חבר בקבוצה" [(visible)]="displayBasic" [style]="{width: '50vw'}" [baseZIndex]="10000">
@@ -19,3 +20,4 @@
         <input class="p-mb-2" id="tel_m" type="tel" pInputText [(ngModel)]="p.phone_number" name=k>
     </div>
   
+

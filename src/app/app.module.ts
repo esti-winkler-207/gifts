@@ -21,6 +21,18 @@ import { MailComponent } from './componentes/mail/mail.component';
 import { AddpeopleComponent } from './componentes/addpeople/addpeople.component';
 
 import { DialogModule } from 'primeng/dialog';
+import { TableParentsComponent } from './componentes/table-parents/table-parents.component';
+
+
+///
+import {TableModule} from 'primeng/table';
+import {ToastModule} from 'primeng/toast';
+import {CalendarModule} from 'primeng/calendar';
+import {SliderModule} from 'primeng/slider';
+import {MultiSelectModule} from 'primeng/multiselect';
+import {ContextMenuModule} from 'primeng/contextmenu';
+import {DropdownModule} from 'primeng/dropdown';
+import {ProgressBarModule} from 'primeng/progressbar';
 
 
 @NgModule({
@@ -33,7 +45,8 @@ import { DialogModule } from 'primeng/dialog';
     UploadImageComponent,
     ImageComponent,
     MailComponent,
-    AddpeopleComponent
+    AddpeopleComponent,
+    TableParentsComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +59,18 @@ import { DialogModule } from 'primeng/dialog';
     CardModule,
     PasswordModule,
     FileUploadModule,
- DialogModule 
+    DialogModule,
+    TableModule,
+    CalendarModule,
+		SliderModule,
+		MultiSelectModule,
+		ContextMenuModule,
+		DropdownModule,
+		ToastModule,
+    ProgressBarModule,
+    
+    
+
 
     
 

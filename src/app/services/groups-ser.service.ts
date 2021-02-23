@@ -11,7 +11,7 @@ export class GroupsSerService {
   url:string="https://localhost:44341/api/Groups"
   g:Groups=new Groups()
   pwd!:string
-
+id!:string
   constructor(private http:HttpClient) { }
   addGroup(g1:Groups):Observable<Array<Groups>>
   {
