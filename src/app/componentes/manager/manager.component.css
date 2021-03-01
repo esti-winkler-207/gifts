@@ -13,6 +13,8 @@ p-card{
     margin: auto !important; 
     text-align: right !important;
     height: 100vh !important;
+    border-radius: 25px !important;
+
 
 }
 form{
@@ -29,7 +31,13 @@ input{
     width: 50vw ;
     margin: auto ;
 }
-
+.border-r{
+    border-radius: 25px !important;
+}
+.button{
+    background-image: linear-gradient(to right, rgb(131, 164, 253) , rgb(111, 59, 253)) !important;
+    border-style: none !important;
+}
 
 @media only screen and (max-width:600px ){
     input{

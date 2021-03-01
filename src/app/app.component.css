@@ -1,0 +1,7 @@
+.nav{
+ background-color: rgb(190, 210, 253);
+}
+.button{
+    background-image: linear-gradient(to right, rgb(131, 164, 253) , rgb(111, 59, 253));
+    border-style: none !important;
+}

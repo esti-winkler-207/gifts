@@ -1,9 +1,9 @@
 
-<div class="ui-fluid p-d-flex p-jc-center">
+<div class="ui-fluid p-d-flex p-jc-center border-r">
 
   <form (ngSubmit)="addmanager()">
       
-    <p-card header="הרשמה למנהלת הקבוצה"  styleClass="p-card-shadow p-shadow-20 p-mt-6">
+    <p-card header="הרשמה למנהלת הקבוצה"  styleClass="p-card-shadow p-shadow-20 p-mt-6 border-r" class="border-r">
         <div class="p-text-right">
             <div class="p-field p-text-right p-d-flex p-flex-column">
             <label class="p-mb-2" for="name_m">הכנס שם משתמש</label>
@@ -21,8 +21,8 @@
             <label class="p-mb-2" for="tel_m">מספר פלאפון</label>
             <input class="p-mb-2" id="tel_m" type="tel" pInputText [(ngModel)]="m2.phone_number_manager" name=k>
         </div></div>
-        <ng-template pTemplate="footer" class="p-d-flex p-text-left">
-            <p-button type="submit" class="p-text-left" label="המשך" icon="pi pi-check"></p-button>
+        <ng-template pTemplate="footer" class="p-d-flex p-text-left button">
+            <p-button type="submit" class="p-text-left button" label="המשך" icon="pi pi-check"></p-button>
         </ng-template>
     </p-card>
   </form >

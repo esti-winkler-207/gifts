@@ -33,6 +33,9 @@ import {MultiSelectModule} from 'primeng/multiselect';
 import {ContextMenuModule} from 'primeng/contextmenu';
 import {DropdownModule} from 'primeng/dropdown';
 import {ProgressBarModule} from 'primeng/progressbar';
+import { MenubarModule } from 'primeng/menubar';
+import { LoginManagerComponent } from './componentes/login-manager/login-manager.component';
+import { LoginParentComponent } from './componentes/login-parent/login-parent.component';
 
 
 @NgModule({
@@ -46,7 +49,9 @@ import {ProgressBarModule} from 'primeng/progressbar';
     ImageComponent,
     MailComponent,
     AddpeopleComponent,
-    TableParentsComponent
+    TableParentsComponent,
+    LoginManagerComponent,
+    LoginParentComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +73,7 @@ import {ProgressBarModule} from 'primeng/progressbar';
 		DropdownModule,
 		ToastModule,
     ProgressBarModule,
-    
+    MenubarModule
     
 
 

@@ -50,12 +50,12 @@ export class TableParentsComponent implements OnInit {
 
   }
   onRowEditInit(p: Parents) {
-    this.clonedProducts[p.id_parent] = {...p};
+    // this.clonedProducts[p.id_parent] = {...p};
 }
 
-onRowEditSave(product: Parents) {
+onRowEditSave(p: Parents) {
     // if (product.price > 0) {
-    //     delete this.clonedProducts[product.id];
+        delete this.clonedProducts[p.id_parent];
     //     this.messageService.add({severity:'success', summary: 'Success', detail:'Product is updated'});
     // }  
     // else {
@@ -63,10 +63,10 @@ onRowEditSave(product: Parents) {
     // }
 }
 
-onRowEditCancel(product: Parents, ) {
+onRowEditCancel(p: Parents, ) {
   // index: number
     // this.products2[index] = this.clonedProducts[product.id];
-    // delete this.clonedProducts[product.id];
+    delete this.clonedProducts[p.id_parent];
 }
 
 }
